@@ -2,7 +2,7 @@
 
 The File Integrity Monitoring (FIM) System is a cybersecurity tool designed to detect unauthorized changes to critical files and directories. It works by creating a secure baseline of file hashes and continuously comparing them to identify modifications, deletions, or new file additions.
 
-This project demonstrates practical implementation of integrity assurance, a core pillar of information security.
+This project demonstrates the practical implementation of integrity assurance, a core pillar of information security.
 
 🎯 Objectives
 
@@ -42,6 +42,10 @@ A baseline hash is generated using SHA-256.
 
 The baseline is securely stored.
 
+Files are periodically re-scanned.
+
+Any hash mismatch triggers an integrity alert.
+
 🚨 Detection Capabilities
 
 The system detects and logs:
@@ -77,7 +81,3 @@ Encrypted baseline storage
 Web-based dashboard
 
 Cloud-based FIM using AWS services
-
-Files are periodically re-scanned.
-
-Any hash mismatch triggers an integrity alert.
